@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      var content = await _lightnovelPlugin.getPopularLightNovels() ?? [];
+      var content = await _lightnovelPlugin.getPopularLightNovels() ?? "";
       print(content);
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp( 
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Plugin example app'),

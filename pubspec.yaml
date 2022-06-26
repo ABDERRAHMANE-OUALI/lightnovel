@@ -1,7 +1,7 @@
 name: lightnovel
-description: A new Flutter plugin project.
+description: A lightnovel api for novely.
 version: 0.0.1
-homepage:
+homepage: https://pub.dev/my-packages
 
 environment:
   sdk: ">=2.17.3 <3.0.0"
